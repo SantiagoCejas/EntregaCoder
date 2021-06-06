@@ -1227,3 +1227,65 @@ border: none;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
+/*Modal*/
+.contenedorModal{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    align-content: space-between;
+    justify-content: space-between;
+}
+    .contenedorModal img{
+        max-width: 80%;
+    }
+.modal-body{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.gridSocios {
+    /*Contenedor de "socios"*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-items: stretch;
+    align-items: stretch;
+    width: 100%;
+    max-height: 30%;
+    text-align: center;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin: 2rem 0rem 2rem 0rem; }
+  
+  .gridSocios h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #0399e0;
+    padding: 3rem 0rem 3rem 0rem; }
+  
+  .gridSocios p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #272525;
+    max-width: 90%; }
+  
+  .gridSocios img {
+    height: 200px;
+    max-width: 200px; }
+  
+  .fotoRedonda {
+    /*Estilo para que una foto cuadrada sea redonda*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+    position: center;
+    max-height: 240px;
+    border-radius: 100%; 
+}
+.imgSocios{
+    max-height: 50px;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+  
