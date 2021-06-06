@@ -46,22 +46,30 @@
         </div>
         <div class="coberturaFormulario">    
             <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
                 <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombreApellido" placeholder="Juana Perez">
+                  </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono">
+                  </div>
+                <div class="col-12">
+                  <label for="direccion" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="direccion" placeholder="Av. Siempreviva 123">
                 </div>
                 <div class="col-md-4">
-                  <label for="inputState" class="form-label">¿Qué tipo de negocio tenés?</label>
-                  <select id="inputState" class="form-select">
+                  <label for="negocio" class="form-label">¿Qué tipo de negocio tenés?</label>
+                  <select id="negocio" class="form-select">
                     <option selected>Elegir</option>
                     <option>Comercial</option>
                     <option>Industrial</option>
                     <option>Servicios</option>
-                    <option>Tengo un emprendimiento/un proyecto en mente</option>
+                    <option>Tengo un emprendimiento/Tengo un proyecto en mente</option>
                   </select>
                 </div>
                 <div class="col-12">
@@ -72,8 +80,11 @@
                     </label>
                   </div>
                 </div>
+                    <label for="consulta" class="form-label"> Consulta</label>
+                    <input class="consulta" type="text" id="Consulta" placeholder="Quiero consultar sobre"> </input>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                  <input type="submit" class="btn btn-primary">Enviar</input>
+                  <input type="reset" class="btn btn-primary"value="Vaciar">Vaciar</input>
                 </div>
               </form>
         </div>
