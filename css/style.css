@@ -45,9 +45,7 @@ b {
 
 .logoConsultoraFooter {
   /*uso logo consultora footer*/
-  max-height: 200px;
-  position: relative;
-  right: 5rem; }
+  max-height: 150px; }
 
 .footerGrid {
   /*Contenedor de footer*/
@@ -301,7 +299,8 @@ b {
 
 .divGridDestacados {
   /*Contenedor de grid al final*/
-  margin: 10rem 3rem 10rem 3rem; }
+  margin: 5rem 3rem 0rem 3rem;
+  justify-content: center; }
 
 .gridDestacados {
   /*Contenedor de puntos a destacar, arriba de "quiero que me llamen"*/
@@ -313,8 +312,10 @@ b {
   width: 100%;
   max-height: 30%;
   text-align: center;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem; }
+  grid-column-gap: 10rem;
+  grid-row-gap: 1rem;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 2rem 2rem 2rem 2rem; }
 
 .gridDestacados__h3 {
   font-size: 2.5rem;
@@ -323,7 +324,7 @@ b {
   padding: 3rem 3rem 3rem 3rem; }
 
 .gridDestacados__texto {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 200;
   color: #272525; }
 
@@ -493,22 +494,13 @@ b {
   /*Contenedor que lleva al contacto*/
   display: inline-block;
   width: 100%;
-  background: url("Recursos/slider2-contacto.jpg");
+  background: url("../images/slider2-contacto.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
   margin-bottom: 3rem;
-  min-height: 240px;
   text-align: center; }
-
-.azul {
-  /*Franja azul contenedor*/
-  width: 100%;
-  background-color: #3A444F;
-  align-content: space-around;
-  position: relative;
-  top: 80px; }
 
 .contenedorTexto {
   /*contenedor texto slider contacto*/
@@ -519,17 +511,15 @@ b {
 
 .hablemos {
   /*Atributos texto naranja slider contacto*/
-  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color: #E0AE77; }
 
 .contacten {
   /*Atributos de boton que lleva al contacto*/
-  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color: #000000;
   background-color: #ABB0B5;
-  margin: 1.5rem 1.5rem 1.5rem 1.5rem; }
+  margin: 3.5rem 1.5rem 3.5rem 1.5rem; }
 
 .sliderCasos {
   width: 40%;
@@ -537,14 +527,12 @@ b {
   text-align: center; }
 
 .textoCasosSlider {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   color: #E5E5E5;
   text-align: center;
   margin: 7rem 5rem 0rem 5rem; }
 
 .botonCasos {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   color: #E0AE77;
   text-align: center;
@@ -730,7 +718,6 @@ b {
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    margin-bottom: 3rem;
     min-height: 120px;
     text-align: center; }
   .azul {
