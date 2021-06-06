@@ -1,0 +1,25 @@
+{
+  "name": "entrega-final",
+  "version": "1.0.0",
+  "description": "Repositorio de trabajos para el cursado de \"Desarrollo Web\" en CoderHouse\r Primer desarrollo HTML y CSS, creado con el objetivo de aprendizaje.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiagoCejas/EntregaCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiagoCejas/EntregaCoder/issues"
+  },
+  "homepage": "https://github.com/SantiagoCejas/EntregaCoder#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
