@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    Padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{/*Fondo de todo el sitio*/
+    background-color: #FFFFff;   
+}
+a{/*estilos links */
+    color:#ffffff;
+    text-decoration: none;
+}
+    a:hover{ /*Cambio de color al pasar el cursor*/
+    color:#E0AE77;
+    }
+h1{
+    position:absolute;
+    top:50%;
+    left:30%;
+    font-size: 5em;
+    color:#6e6e6e;
+    font-weight: 500;
+}
+h2{
+    color: #0399e0;
+    font-size: 3rem;
+    font-weight: 200;
+    padding-bottom: 3rem;
+}
+ul{/*Atributos listas*/
+    list-style:none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+b{
+    color:#0399e0;
+}

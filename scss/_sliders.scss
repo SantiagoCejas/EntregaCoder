@@ -1,0 +1,56 @@
+.sliderHome{/*Contenedor slider home, con fondo*/
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    display: inline-block;
+    justify-content: stretch;
+}
+    .sliderHome h1{
+        position:absolute;
+        top:50%;
+        left:30%;
+        font-style: italic;
+        color:#0399e0;
+        font-size: 5rem;
+}
+
+@mixin sliders($url){
+    display: flex;
+    background: center url(../images/#{$url}.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    justify-content:space-between;
+    align-content: space-between;
+    height: 80vh;
+}
+.sliderCT{
+    @include sliders(como_trabajamos);
+}
+.sliderQS{
+    @include sliders(quienes_somos);
+}
+.sliderBlog{
+    @include sliders(blog);
+}
+.sliderCE{
+    @include sliders(casos_exito);
+}
+.cobertura{/*cuadrado negro encima slider principal*/
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+    .cobertura h1{ /*h1 del slider*/
+        align-self: center;
+        font-style: italic;
+        color:#ffffff;
+        font-size: 5rem;
+        font-weight: 200;
+    }

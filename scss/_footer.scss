@@ -1,0 +1,60 @@
+.logoConsultoraFooter{/*uso logo consultora footer*/
+    max-height: 200px;
+    position: relative;
+    right: 5rem;
+}
+.footerGrid{ /*Contenedor de footer*/
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row-gap: auto;
+    grid-column-gap:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.linksFooter{/*Atributos a los links*/
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.derechaFooter{ /*Atributos columna derecha del footer, links*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    border-left: solid 4px #7E7C7C;
+    margin-top: 1.5rem;
+}
+    .derechaFooter ul{
+        text-align: left;
+    }
+.rrss{ /*Contenedor links rrss*/
+    display: inline;
+    width: 100%;
+    text-align: center;
+
+}
+    .rrss li{
+        display: inline;
+        padding-left: 0.5rem;
+    }
+.datosFinales{/*Contenedor datos de cierre footer*/
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+}
+    .datosFinales p{
+        font-size: 2.5rem;
+        color:#ffffff;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+.datosContacto{/*Atributos <p> footer*/
+    font-size: 2rem;
+    color:#E0AE77;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+}
