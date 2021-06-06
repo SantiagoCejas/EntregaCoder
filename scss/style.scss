@@ -224,11 +224,8 @@
     overflow: hidden;
     justify-content: center;
     flex-wrap: nowrap;
+    padding:1rem 1rem 1rem 1rem;
 }
-    .coberturaFormulario p{
-        font-size:2rem;
-        line-height: 4rem;
-    }
 .boton{/*Estilo de los botones de consulta*/
     font-size:2rem;
     background:$azulmarca ;
@@ -1167,4 +1164,30 @@ border: none;
 .modal-title{
     color:$texto--b;
     font-size: 2rem;
+}
+.form-label{
+    font-size: 1.8rem;
+    color:#ffffff;
+    padding:1rem 1rem 1rem 1rem;
+}
+.form-control{
+    padding:1rem 1rem 1rem 1rem;
+}
+.consulta{
+    width:50%;
+    height: 10%;
+    padding: 1rem 1rem 1rem 1rem ;
+}
+.form-check-label{
+    font-size: 1.6rem;
+    color:#ffffff;
+    padding:1rem 0rem 1rem 0rem; 
+}
+.form-check-input{
+    padding:1rem 0rem 1rem 0rem; 
+}
+.form-check{
+    justify-content: space-between;
+    align-items:center;
+    padding:1rem 1rem 1rem 2rem; 
 }
