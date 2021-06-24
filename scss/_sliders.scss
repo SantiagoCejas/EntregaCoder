@@ -38,6 +38,9 @@
 .sliderCE{
     @include sliders(casos_exito);
 }
+.sliderArticulos{
+    @include sliders(analitica2)
+}
 .cobertura{/*cuadrado negro encima slider principal*/
     background-color:rgba(0, 0, 0, 0.5);
     width: 100%;

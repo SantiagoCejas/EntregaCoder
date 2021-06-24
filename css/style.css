@@ -172,6 +172,18 @@ b {
   align-content: space-between;
   height: 80vh; }
 
+.sliderArticulos {
+  display: flex;
+  background: center url(../images/analitica2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 80vh; }
+
 .cobertura {
   /*cuadrado negro encima slider principal*/
   background-color: rgba(0, 0, 0, 0.5);
@@ -689,7 +701,7 @@ b {
   max-height: 50px;
   padding: 1.5rem 0.5rem 0.5rem 0.5rem; }
 
-/*Modal*/
+/*Modal (bootstrap)*/
 .contenedorModal {
   display: grid;
   grid-template-rows: 1fr;
