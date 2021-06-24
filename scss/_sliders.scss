@@ -54,3 +54,30 @@
         font-size: 5rem;
         font-weight: 200;
     }
+.frase{/*Frases de corte, que no tienen fondo*/
+    font-style:italic;
+    font-family: 'Montserrat', sans-serif;
+    color:$fuente--frase;
+    font-size: 2rem;
+    margin:5rem 7rem 3rem 7rem;
+    padding: 1rem 2rem 1rem 2rem ;
+    text-align: center;
+    line-height:3rem;
+}
+.sliderFrase{/*Contenedor frase de corte (fondo negro)*/
+    background:url("../images/slider-frase.jpg");
+    background-size:cover; 
+    width: 100%;
+    height:350%;
+    min-height: 200px;
+    display:inline-block;
+    margin: 1rem 0rem 3em 0rem;
+}
+.sliderFrase__texto{/*Estilo de texto para la frase de corte*/
+    font-size: 2.5rem;
+    font-style:italic;
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7rem 7rem 7rem 7rem ;
+    text-align: center;
+}

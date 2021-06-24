@@ -48,37 +48,7 @@
         display: block;
         background-color: $azulmarca;
     }
-.logoConsultora{/*uso logo*/
-    display: flex;
-    max-height: 80px;
-}
-.frase{/*Frases de corte, que no tienen fondo*/
-    font-style:italic;
-    font-family: 'Montserrat', sans-serif;
-    color:$fuente--frase;
-    font-size: 2rem;
-    margin:5rem 7rem 3rem 7rem;
-    padding: 1rem 2rem 1rem 2rem ;
-    text-align: center;
-    line-height:3rem;
-}
-.sliderFrase{/*Contenedor frase de corte (fondo negro)*/
-    background:url("../images/slider-frase.jpg");
-    background-size:cover; 
-    width: 100%;
-    height:350%;
-    min-height: 200px;
-    display:inline-block;
-    margin: 1rem 0rem 3em 0rem;
-}
-.sliderFrase__texto{/*Estilo de texto para la frase de corte*/
-    font-size: 2.5rem;
-    font-style:italic;
-    color:#ffffff;
-    font-family: 'Montserrat', sans-serif;
-    padding: 7rem 7rem 7rem 7rem ;
-    text-align: center;
-}
+
 .gridDetalleHome{/*Contenedor grid fotos con texto Home*/
     display:grid;
     grid-template-rows: auto;
@@ -305,789 +275,6 @@
     width: 100%;
     height: 80vh;
 }
-@media only screen and (max-width:768px) {/*Media Q para celular */
-    h1{
-        font-size: 2rem;
-    }
-    h2{
-        color: $texto--b;
-        font-size: 1.5rem;
-        font-weight: 200;
-        padding-bottom: 1.5rem;
-}
-ul{/*Atributos listas*/
-    list-style:none;
-    margin-top: 1rem;
-    font-size: 1rem;}
-
-.top{/*contenedor para el menú*/
-        background-color:$azulmarca;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        height:auto; 
-        width:100%;
-        max-height: 30%;
-        position: fixed;
-        top: 0;
-        left:0;
-        z-index: 999;
-    
-    }
-        .top ul li{/*Listas para el menú*/
-            list-style:none;
-            display:inline-block;
-            position: relative;
-            font-size: 1.5rem;
-            padding: 0rem 1rem 1rem 1rem;
-            justify-content: stretch;
-    }
-        .top ul li ul{
-            position:absolute;
-            display:none;
-            text-align: left;
-            top:40px;
-            left: 0;
-            right: 0;
-            width: 300px;
-            z-index: 999;
-        }
-        .top ul li ul li{
-            display: block;
-            transition: background-color;
-            font-size: 1rem;
-            padding: 25px 15px 15px 15px;
-            width: 100%;
-        }
-        .top ul li:hover ul{
-            display: block;
-            background-color: $azulmarca;
-        }
-        .sliderHome{/*Contenedor slider home, con fondo*/
-            width: 100%;
-            overflow: hidden;
-            height: 50%;
-            display: inline-block;
-            justify-content: stretch;
-        }
-            .sliderHome h1{
-                position:absolute;
-                top:30%;
-                left:20%;
-                font-style: italic;
-                color:$texto--b;
-                font-size: 3rem;
-        }
-            .cobertura h1{ /*h1 del slider*/
-                align-self: center;
-                font-style: italic;
-                color:#ffffff;
-                font-size: 3rem;
-                font-weight: 200;
-            }
-    .frase{/*Frases de corte, que no tienen fondo*/
-        font-style:italic;
-        font-family: 'Montserrat', sans-serif;
-        color:$fuente--frase;
-        font-size: 1.2rem;
-        margin:1rem 1rem 1rem 1rem;
-        padding: 1rem 1rem 1rem 1rem ;
-        text-align: center;
-        line-height:2rem;
-            }
-    .divGridDestacados{ /*Contenedor de grid al final*/
-        margin:3rem 1rem 3rem 1rem;
-    }
-    .gridDestacados img{
-        height: 80px;
-        max-width: fit-content;
-    }
-        .gridDestacados h3{
-        font-size: 1.2rem;
-        font-weight: 400;
-        color:$texto--b;
-        padding:1rem 1rem 1rem 1rem ;
-    }
-        .gridDestacados p{
-        font-size: 1rem;
-        font-weight: 200;
-        color:#272525;
-    }
-    .gridDetalleDerecha{/*Contenedor Grid con texto a la derecha e imagen a la izquierda*/
-        display:grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        align-items: center;
-        text-align: left;
-        font-size: 1rem; 
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-        .gridDetalleDerecha img{
-            justify-self: left;
-            max-width: 80%;
-            max-height: 50%; 
-            padding-left: 3rem;
-    }
-        .gridDetalleDerecha h2{
-            justify-self: center;
-            margin-right: 3rem;
-    }
-        .gridDetalleDerecha p{
-            justify-self: center;
-            line-height: 2rem;
-            margin-right: 5rem;
-    }
-    .gridDetalleIzquierda{/*Contenedor Grid con texto a la izquierda e imagen a la Derecha*/
-        display:grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        align-items: center;
-        text-align: right;
-        font-size: 1rem; 
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-        .gridDetalleIzquierda img{
-            justify-self: left;
-            max-width: 80%;
-            max-height: 50%; 
-            padding-right: 3rem;
-    }
-        .gridDetalleIzquierda h2{
-            justify-self: center;
-            margin-left: 5rem;
-    }
-        .gridDetalleIzquierda p{
-            justify-self: center;
-            line-height: 2rem;
-            margin-left: 5rem;
-    }
-    .logoConsultoraFooter{/*uso logo consultora footer*/
-        max-height: 80px;
-    }
-    .hablemos{/*Atributos texto naranja slider contacto*/
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.2rem;
-        color:$texto--destacado;
-    }
-    .contacten{/*Atributos de boton que lleva al contacto*/
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.2rem;
-        color:#000000;
-        background-color:#ABB0B5;
-        margin: 1.5rem 1.5rem 1.5rem 1.5rem;
-    }
-    .quieroContacten{/*Contenedor que lleva al contacto*/
-        display: inline-block;
-        width: 100%;
-        background: url(../images/slider2-contacto.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        position: relative;
-        min-height: 120px;
-        text-align: center;}
-
-    .azul{/*Franja azul contenedor*/
-            width:100%;
-            background-color: $azulmarca;
-            align-content: space-around;
-            position:relative;
-            top:40px;
-        }
-    .footerGrid{ /*Contenedor de footer*/
-            display:grid;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr 1fr 2fr;
-            grid-row-gap: auto;
-            grid-column-gap:auto;
-            align-items: center;
-            justify-content: space-between;
-        }
-    .linksFooter{/*Atributos a los links*/
-            align-self: stretch;
-            justify-self: stretch;
-        }
-        
-    .derechaFooter{ /*Atributos columna derecha del footer, links*/
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: space-around;
-            justify-content: space-around;
-            border-left: solid 4px #7E7C7C;
-            margin-top: 1rem;
-        }
-        .derechaFooter ul{
-                text-align: left;
-            }
-    .rrss{ /*Contenedor links rrss*/
-            display: inline;
-            width: 100%;
-            text-align: center;
-        
-        }
-        .rrss li{
-                display: inline;
-                padding-left: 0.5rem;
-            }
-    .datosFinales{/*Contenedor datos de cierre footer*/
-            display:grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto;
-            justify-content: center;
-            align-content: center;
-        }
-        .datosFinales p{
-                font-size: 1.8rem;
-                color:#ffffff;
-                padding: 1rem 1rem 1rem 1rem;
-            }
-    .datosContacto{/*Atributos <p> footer*/
-            font-size: 1.2rem;
-            color:$texto--destacado;
-            margin: 1rem 1rem 1rem 1rem;
-            padding: 1rem 1rem 1rem 1rem;
-            text-align: center;
-        }
-        .gridSocios p{
-            font-size: 1.2rem;
-            font-weight: 200;
-            color:#272525;
-            max-width: 90%;
-        }
-        .gridSocios img{
-            height: 120px;
-            max-width: 120px;
-        }
-    .subSlider{/*contenedor imagen grande debajo de slider "como trabajamos"*/
-            width: 100%;
-            display: grid;
-            grid-template-columns: auto;
-            min-height:300px;
-            justify-content: center;
-            background: $azulmarca;
-            margin-top: 3rem;
-        }
-        .subSlider img{
-                max-height: 250px;
-            }
-    .formulario{/*Contenedor formulario*/
-                    display: flex;
-                    flex-direction: row;
-                    background-image: url(recursos/computadora_contacto.png);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                    overflow: hidden;
-                    text-align: center;
-                    justify-content: space-between;
-                    align-content: center;
-                    padding: 2rem 2rem 2rem 2rem;
-                    margin-bottom: 3rem;
-                }
-        .formulario h2{
-                        font-size: 1.2rem;
-                        font-weight: 600;
-                        line-height: 2rem;
-                        color:#ffffff;
-                    }
-        .formulario p{
-                        font-weight: 300;
-                        font-size: 1.2rem;
-                        line-height: 3rem;
-                        color:#ffffff;
-                    }
-                
-    .coberturaFormulario{/*Contenedor formulario*/
-                    background-color:rgba(0, 0, 0, 0.5);
-                    width: 100%;
-                    display: flex;
-                    overflow: hidden;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-        .coberturaFormulario p{
-                        font-size:1rem;
-                        line-height: 2rem;
-                    }
-    .boton{/*Estilo de los botones de consulta*/
-        font-size:1rem;
-        background:$azulmarca ;
-        color: $texto--destacado;
-        border: 2px solid #000000;
-        border-radius: 6px;
-        margin: 1rem 1rem 1rem 1rem; 
-    }
-    .gridDetalleHome{/*Contenedor grid fotos con texto Home*/
-        display:grid;
-        grid-template-rows: auto;
-        grid-template-columns: 4fr 5fr;
-        width: 100%;
-        align-content: space-around;
-        align-items: center;
-    }
-        .gridDetalleHome img{
-            justify-self: left;
-            max-width: 80%;
-            padding-left: 3rem;
-    }
-        .gridDetalleHome h2{
-            justify-self: center;
-            text-align: left;
-            margin-right: 5rem;
-    }
-        .gridDetalleHome p{
-            justify-self: center;
-            text-align: left;
-            line-height: 2rem;
-            font-size: 1.2rem;
-            margin-right: 3rem;
-    }
-    .sliderFrase{/*Contenedor frase de corte (fondo negro)*/
-        background:url("../images/slider-frase.jpg");
-        background-size:cover; 
-        width: 100%;
-        height:350%;
-        min-height: 120px;
-        display:inline-block;
-        margin: 1rem 0rem 3rem 0rem;
-    }
-    .textoFrase{/*Estilo de texto para la frase de corte*/
-        font-size: 1.2rem;
-        font-style:italic;
-        color:#ffffff;
-        padding: 3rem 3rem 3rem 3rem ;
-        text-align: center;
-    }
-    .logoConsultora{/*uso logo consultora top*/
-        display: flex;
-        max-height: 50px;
-    }
-    .sliderCasos{
-        width: 40%;
-        display: inline-block;
-        text-align: center;
-    }
-    .textoCasosSlider{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.2rem;
-        color:$fuente--slider;
-        text-align: center;
-        margin:3rem 2rem 0rem 2rem;
-    }
-    .botonCasos{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.2rem;
-        color:$texto--destacado;
-        text-align: center;
-        background-color: $fuente--frase;  
-        margin:4rem 2rem 0rem 2rem;
-    }
-    .mapa h1{
-        position:relative;
-        align-self: center;
-        font-style: italic;
-        color:#2b2525;
-        font-size: 2.5rem;
-}  
-}
-@media only screen and (min-width: 768px) and (max-width:1200px) { /*Tablet*/
-    h1{
-        font-size: 3.5rem;
-    }   
-    h2{
-            color: $texto--b;
-            font-size: 2rem;
-            font-weight: 200;
-            padding-bottom: 1.5rem;
-    }
-    ul{/*Atributos listas*/
-        list-style:none;
-        margin-top: 1rem;
-        font-size: 1rem;}
-    
-    .top{/*contenedor para el menú*/
-            background-color:$azulmarca;
-            display: flex;
-            justify-content: stretch;
-            align-items: center;
-            flex-wrap: nowrap;
-            height:auto; 
-            width:100%;
-            max-height: 30%;
-            position: fixed;
-            top: 0;
-            left:0;
-            z-index: 999;
-        
-        }
-            .top ul li{/*Listas para el menú*/
-                list-style:none;
-                display:inline-block;
-                position: relative;
-                font-size: 2rem;
-                padding: 0rem 1rem 1rem 1rem;
-                font-family: 'Montserrat', sans-serif;
-        }
-            .top ul li ul{
-                position:absolute;
-                display:none;
-                text-align: left;
-                top:40px;
-                left: 0;
-                right: 0;
-                width: 300px;
-                z-index: 999;
-            }
-            .top ul li ul li{
-                display: block;
-                transition: background-color;
-                font-size: 1rem;
-                padding: 25px 15px 15px 15px;
-                width: 100%;
-            }
-            .top ul li:hover ul{
-                display: block;
-                background-color: $azulmarca;
-            }
-            .sliderHome{/*Contenedor slider home, con fondo*/
-                width: 100%;
-                overflow: hidden;
-                height: 85vh;
-                display: inline-block;
-                justify-content: stretch;
-            }
-                .sliderHome h1{
-                    position:absolute;
-                    top:45%;
-                    left:30%;
-                    font-style: italic;
-                    color:$texto--b;
-                    font-size: 3rem;
-            }
-                .cobertura h1{ /*h1 del slider*/
-                    align-self: center;
-                    font-style: italic;
-                    color:#ffffff;
-                    font-size: 3rem;
-                    font-weight: 200;
-                }
-        .frase{/*Frases de corte, que no tienen fondo*/
-            font-style:italic;
-            font-family: 'Montserrat', sans-serif;
-            color:$fuente--frase;
-            font-size: 1.5rem;
-            margin:1rem 1rem 1rem 1rem;
-            padding: 1rem 1rem 1rem 1rem ;
-            text-align: center;
-            line-height:2rem;
-        }
-        .divGridDestacados{ /*Contenedor de grid al final*/
-            margin:3rem 1rem 3rem 1rem;
-        }
-        .gridDestacados img{
-            height: 80px;
-            max-width: fit-content;
-        }
-            .gridDestacados h3{
-            font-size: 1.5rem;
-            font-weight: 400;
-            color:$texto--b;
-            padding:1rem 1rem 1rem 1rem ;
-        }
-            .gridDestacados p{
-            font-size: 1.2rem;
-            font-weight: 200;
-            color:#272525;
-        }
-        .gridDetalleDerecha{/*Contenedor Grid con texto a la derecha e imagen a la izquierda*/
-            display:grid;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr 1fr;
-            width: 100%;
-            align-items: center;
-            text-align: left;
-            font-size: 1.2rem; 
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-            .gridDetalleDerecha img{
-                justify-self: left;
-                max-width: 80%;
-                max-height: 50%; 
-                padding-left: 3rem;
-        }
-            .gridDetalleDerecha h2{
-                justify-self: center;
-                margin-right: 3rem;
-        }
-            .gridDetalleDerecha p{
-                justify-self: center;
-                line-height: 2rem;
-                margin-right: 5rem;
-        }
-        .gridDetalleIzquierda{/*Contenedor Grid con texto a la izquierda e imagen a la Derecha*/
-            display:grid;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr 1fr;
-            width: 100%;
-            align-items: center;
-            text-align: right;
-            font-size: 1.2rem; 
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        }
-            .gridDetalleIzquierda img{
-                justify-self: left;
-                max-width: 80%;
-                max-height: 50%; 
-                padding-right: 3rem;
-        }
-            .gridDetalleIzquierda h2{
-                justify-self: center;
-                margin-left: 5rem;
-        }
-            .gridDetalleIzquierda p{
-                justify-self: center;
-                line-height: 2rem;
-                margin-left: 5rem;
-        }
-        .logoConsultoraFooter{/*uso logo consultora footer*/
-            max-height: 120px;
-        }
-        .hablemos{/*Atributos texto naranja slider contacto*/
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            color:$texto--destacado;
-        }
-        .contacten{/*Atributos de boton que lleva al contacto*/
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            color:#000000;
-            background-color:#ABB0B5;
-            margin: 1.5rem 1.5rem 1.5rem 1.5rem;
-        }
-        .quieroContacten{/*Contenedor que lleva al contacto*/
-            display: inline-block;
-            width: 100%;
-            background: url(recursos/slider2-contacto.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 3rem;
-            min-height: 120px;
-            text-align: center;}
-    
-        .azul{/*Franja azul contenedor*/
-                width:100%;
-                background-color: $azulmarca;
-                align-content: space-around;
-                position:relative;
-                top:40px;
-            }
-        .footerGrid{ /*Contenedor de footer*/
-                display:grid;
-                grid-template-rows: auto;
-                grid-template-columns: 1fr 1fr 2fr;
-                grid-row-gap: auto;
-                grid-column-gap:auto;
-                align-items: center;
-                justify-content: space-between;
-            }
-        .linksFooter{/*Atributos a los links*/
-                align-self: stretch;
-                justify-self: stretch;
-            }
-            
-        .derechaFooter{ /*Atributos columna derecha del footer, links*/
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                align-content: space-around;
-                justify-content: space-around;
-                border-left: solid 4px #7E7C7C;
-                margin-top: 1rem;
-            }
-            .derechaFooter ul{
-                    text-align: left;
-                }
-        .rrss{ /*Contenedor links rrss*/
-                display: inline;
-                width: 100%;
-                text-align: center;
-            
-            }
-            .rrss li{
-                    display: inline;
-                    padding-left: 1rem;
-                }
-        .datosFinales{/*Contenedor datos de cierre footer*/
-                display:grid;
-                grid-template-columns: auto;
-                grid-template-rows: auto;
-                justify-content: center;
-                align-content: center;
-            }
-            .datosFinales p{
-                    font-size: 2rem;
-                    color:#ffffff;
-                    padding: 1rem 1rem 1rem 1rem;
-                }
-        .datosContacto{/*Atributos <p> footer*/
-                font-size: 1.5rem;
-                color:$texto--destacado;
-                margin: 1rem 1rem 1rem 1rem;
-                padding: 1rem 1rem 1rem 1rem;
-                text-align: center;
-            }
-            .gridSocios p{
-                font-size: 1.5rem;
-                font-weight: 200;
-                color:#272525;
-                max-width: 90%;
-            }
-            .gridSocios img{
-                height: 120px;
-                max-width: 120px;
-            }
-        .subSlider{/*contenedor imagen grande debajo de slider "como trabajamos"*/
-                width: 100%;
-                display: grid;
-                grid-template-columns: auto;
-                min-height:300px;
-                justify-content: center;
-                background: $azulmarca;
-                margin-top: 3rem;
-            }
-            .subSlider img{
-                    max-height: 250px;
-                }   
-        .formulario{/*Contenedor formulario*/
-                        display: flex;
-                        flex-direction: row;
-                        background-image: url(recursos/computadora_contacto.png);
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        width: 100%;
-                        overflow: hidden;
-                        text-align: center;
-                        justify-content: space-between;
-                        align-content: center;
-                        padding: 2rem 2rem 2rem 2rem;
-                        margin-bottom: 3rem;
-                    }
-            .formulario h2{
-                            font-size: 1.5rem;
-                            font-weight: 600;
-                            line-height: 2rem;
-                            color:#ffffff;
-                        }
-            .formulario p{
-                            font-weight: 300;
-                            font-size: 1.5rem;
-                            line-height: 3rem;
-                            color:#ffffff;
-                        }
-                    
-        .coberturaFormulario{/*Contenedor formulario*/
-                        background-color:rgba(0, 0, 0, 0.5);
-                        width: 100%;
-                        display: flex;
-                        overflow: hidden;
-                        justify-content: center;
-                        flex-wrap: wrap;
-                    }
-            .coberturaFormulario p{
-                            font-size:1rem;
-                            line-height: 2rem;
-                        }
-        .boton{/*Estilo de los botones de consulta*/
-            font-size:1rem;
-            background:$azulmarca ;
-            color: $texto--destacado;
-            border: 2px solid #000000;
-            border-radius: 6px;
-            margin: 1rem 1rem 1rem 1rem; 
-        }
-        .gridDetalleHome{/*Contenedor grid fotos con texto Home*/
-            display:grid;
-            grid-template-rows: auto;
-            grid-template-columns: 4fr 5fr;
-            width: 100%;
-            align-content: space-around;
-            align-items: center;
-        }
-            .gridDetalleHome img{
-                justify-self: left;
-                max-width: 80%;
-                padding-left: 3rem;
-        }
-            .gridDetalleHome h2{
-                justify-self: center;
-                text-align: left;
-                margin-right: 5rem;
-        }
-            .gridDetalleHome p{
-                justify-self: center;
-                text-align: left;
-                line-height: 2rem;
-                font-size: 1.5rem;
-                margin-right: 3rem;
-        }
-        .sliderFrase{/*Contenedor frase de corte (fondo negro)*/
-            background:url("../images/slider-frase.jpg");
-            background-size:cover; 
-            width: 100%;
-            height:350%;
-            min-height: 120px;
-            display:inline-block;
-            margin: 1rem 0rem 3rem 0rem;
-        }
-        .textoFrase{/*Estilo de texto para la frase de corte*/
-            font-size: 1.5rem;
-            font-style:italic;
-            color:#ffffff;
-            padding: 3rem 3rem 3rem 3rem ;
-            text-align: center;
-        }
-        .logoConsultora{/*uso logo consultora top*/
-            display: flex;
-            max-height: 70px;
-        }
-        .sliderCasos{
-            width: 40%;
-            display: inline-block;
-            text-align: center;
-        }
-        .textoCasosSlider{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.8rem;
-            color:$fuente--slider;
-            text-align: center;
-            margin:4rem 2rem 0rem 2rem;
-        }
-        .botonCasos{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2rem;
-            color:$texto--destacado;
-            text-align: center;
-            background-color: $fuente--frase;  
-            margin:4rem 2rem 0rem 2rem;
-        }
-        .mapa h1{
-            position:relative;
-            align-self: center;
-            font-style: italic;
-            color:#2b2525;
-            font-size: 3rem;
-    } 
-    }
 /*Modificando clases del bootstrap*/
 .carousel-control-next, .carousel-control-prev{
 background-color: rgba(0, 0, 0, 0.014);
@@ -1178,7 +365,6 @@ border: none;
         margin: 2rem 2rem 2rem 2rem;
     }
 /*Estilos del template de bootstrap*/
-
 .team-member {
     margin-bottom: 3rem;
     text-align: center;
@@ -1227,6 +413,52 @@ border: none;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
+.gridSocios {
+/*Contenedor de "socios"*/
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        justify-items: stretch;
+        align-items: stretch;
+        width: 100%;
+        max-height: 30%;
+        text-align: center;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        margin: 2rem 0rem 2rem 0rem; 
+    }
+      
+    .gridSocios h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #0399e0;
+        padding: 3rem 0rem 3rem 0rem; 
+    }   
+    .gridSocios p {
+        font-size: 1.8rem;
+        font-weight: 200;
+        color: #272525;
+        max-width: 90%;
+    }
+      
+    .gridSocios img {
+        height: 200px;
+        max-width: 200px; 
+    }
+.fotoRedonda {
+        /*Estilo para que una foto cuadrada sea redonda*/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        object-fit: cover;
+        position: center;
+        max-height: 240px;
+        border-radius: 100%; 
+    }
+.imgSocios{
+        max-height: 50px;
+        padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
 /*Modal*/
 .contenedorModal{
     display: grid;
@@ -1240,52 +472,23 @@ border: none;
     .contenedorModal img{
         max-width: 80%;
     }
+.modal-content{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .modal-body{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
     font-style: italic;
     font-size: 1.5rem;
+    padding-right: 0rem;
 }
-.gridSocios {
-    /*Contenedor de "socios"*/
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    justify-items: stretch;
-    align-items: stretch;
-    width: 100%;
-    max-height: 30%;
-    text-align: center;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    margin: 2rem 0rem 2rem 0rem; }
-  
-  .gridSocios h3 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #0399e0;
-    padding: 3rem 0rem 3rem 0rem; }
-  
-  .gridSocios p {
-    font-size: 1.8rem;
-    font-weight: 200;
-    color: #272525;
-    max-width: 90%; }
-  
-  .gridSocios img {
-    height: 200px;
-    max-width: 200px; }
-  
-  .fotoRedonda {
-    /*Estilo para que una foto cuadrada sea redonda*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    object-fit: cover;
-    position: center;
-    max-height: 240px;
-    border-radius: 100%; 
-}
-.imgSocios{
-    max-height: 50px;
-    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+.textoModal{
+    line-height: 2.5rem;
+    padding: 0.5rem 2.5rem 1.5rem 1.5rem;
 }
   
