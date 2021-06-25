@@ -730,3 +730,26 @@ b {
 .textoModal {
   line-height: 2.5rem;
   padding: 0.5rem 2.5rem 1.5rem 1.5rem; }
+
+/*Clases para modificar nav de bootstrap*/
+.nav-item {
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  font-weight: 500; }
+
+.dropdown-item {
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  font-weight: 500;
+  color: #ffffff; }
+
+.dropdown-menu {
+  background-color: #3A444F; }
+
+.navbar-expand-lg {
+  background-color: #3A444F;
+  padding: 0.5rem;
+  margin: 0; }
+
+.navbar-toggler {
+  border: solid blue; }
