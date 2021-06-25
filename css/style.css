@@ -751,5 +751,7 @@ b {
   padding: 0.5rem;
   margin: 0; }
 
-.navbar-toggler {
-  border: solid blue; }
+.navbar-toggler-icon {
+  background-image: url(../images/hamburguesa.png);
+  width: 3rem;
+  height: 3rem; }
