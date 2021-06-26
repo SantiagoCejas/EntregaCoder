@@ -26,6 +26,7 @@
     align-content: space-between;
     height: 80vh;
 }
+/*Slider principales de cada sección*/
 .sliderCT{
     @include sliders(como_trabajamos);
 }
@@ -107,6 +108,11 @@
     margin-bottom: 3rem;
     text-align: center;
 }
+.sliderCasos{
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+}
 .contenedorTexto{/*contenedor texto slider contacto*/
     display: inline-block;
     width: 45%;
@@ -122,6 +128,21 @@
     color:#000000;
     background-color:#ABB0B5;
     margin: 4.5rem 1.5rem 4.5rem 1.5rem;
+}
+.textoCasosSlider{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color:#E5E5E5;
+    text-align: center;
+    margin:7rem 5rem 0rem 5rem;
+}
+.botonCasos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color:#E0AE77;
+    text-align: center;
+    background-color: #5C5757;  
+    margin:7rem 5rem 0rem 5rem;
 }
 .mapa{ /*Contenedor iframe google maps*/
     display: flex;
