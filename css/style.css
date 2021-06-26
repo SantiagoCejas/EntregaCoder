@@ -309,7 +309,7 @@ footer {
     min-height: 100px; }
   .sliderFrase__texto {
     /*Estilo de texto para la frase de corte*/
-    font-size: 2rem;
+    font-size: 2em;
     font-style: italic;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -317,17 +317,16 @@ footer {
     text-align: center; }
   .gridDetalleDerecha {
     /*Contenedor Grid con texto a la derecha e imagen a la izquierda*/
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     font-size: 1.2rem;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
-  .gridDetalleDerecha img {
-    padding-left: 3rem; }
+    margin-bottom: 1.5rem;
+    justify-content: center; }
   .gridDetalleDerecha h2 {
-    justify-self: center;
-    margin-right: 5rem; }
+    font-size: 1.5rem; }
   .gridDetalleDerecha p {
+    font-size: 1.2rem;
     justify-self: center;
     line-height: 3rem;
     margin-right: 5rem; }
@@ -335,11 +334,8 @@ footer {
     /*Contenedor de puntos a destacar, arriba de "quiero que me llamen"*/
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
     grid-row-gap: 2rem;
-    padding: 2rem 2rem 2rem 2rem;
-    margin: 5rem 3rem 3rem 3rem;
     grid-column-gap: 1rem; }
   .gridDestacados__h3 {
     font-size: 2rem;
@@ -429,6 +425,8 @@ footer {
   .blog p {
     font-size: 1.2rem;
     margin: 1rem 1rem 1rem 1rem; }
+  .formulario {
+    padding: 2rem 2rem 2rem 2rem; }
   .formulario h2 {
     font-size: 2rem;
     font-weight: 600;
