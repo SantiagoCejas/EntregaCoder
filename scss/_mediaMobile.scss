@@ -57,7 +57,7 @@
         grid-column-gap:1rem;
     }
     .gridDestacados__h3{
-            font-size: 20rem;
+            font-size: 2rem;
             font-weight: 400;
             color:$texto--b;
             padding:2rem 2rem 2rem 2rem ;
@@ -65,7 +65,7 @@
     .gridDestacados__texto{
             font-size: 1.2rem;
             font-weight: 200;
-            color:#272525;
+            color:$fuente;
         }
     .gridDestacados__imagenes{
             height: 100px;
@@ -79,17 +79,15 @@
     .contacten{/*Atributos de boton que lleva al contacto*/
         font-size: 2rem;
         color:#000000;
-        background-color:#ABB0B5;
+        background-color:$fuente--slider;
         margin: 2.5rem 1rem 2.5rem 1rem;
     }
     .logoConsultoraFooter{/*uso logo consultora footer*/
         max-height:80px;
     }
     .footerGrid{ /*Contenedor de footer*/
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: stretch;
-        align-content: center;
+        display: flex;
+        flex-direction: column;
     }
     .derechaFooter{ /*Atributos columna derecha del footer, links*/
         border-left: 0px;
@@ -157,11 +155,54 @@
                 height: 80px;
                 max-width: 80px; 
             }
-            .blog p{
-                font-size: 1.2rem;
-                margin: 1rem 1rem 1rem 1rem;
-            }
-
-
+    .blog p{
+        font-size: 1.2rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+        .formulario h2{
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 3rem;
+            color:#ffffff;
+        }
+        .formulario p{
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            color:#ffffff;
+        }
+    .boton{/*Estilo de los botones de consulta*/
+        font-size:1.5rem;
+    }
+    .form-label{
+        font-size: 1.8rem;
+        color:#ffffff;
+        padding:1rem 1rem 1rem 1rem;
+    }
+    .form-control{
+        padding:1rem 1rem 1rem 1rem;
+    }
+    .form-select{
+        font-size:1.5rem;
+    }
+    .consulta{
+        width:70%;
+        height: 10%;
+        padding: 1rem 1rem 1rem 1rem ;
+        margin: 1rem 1rem 1rem 1rem ;
+    }
+    .form-check-label{
+        font-size: 1.6rem;
+        color:#ffffff;
+        padding:1rem 0rem 1rem 0rem; 
+    }
+    .form-check-input{
+        padding:1rem 0rem 1rem 0rem; 
+    }
+    .form-check{
+        justify-content: space-between;
+        align-items:center;
+        padding:1rem 1rem 1rem 2rem; 
+    }
 
 }

@@ -4,7 +4,6 @@
 @import "colores";
 @import "mediaMobile";
 @import "mediaTablet";
-
 .gridDestacados{ /*Contenedor de puntos a destacar, arriba de "quiero que me llamen"*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -28,7 +27,7 @@
 .gridDestacados__texto{
         font-size: 1.6rem;
         font-weight: 200;
-        color:$fuente--slider;
+        color:$fuente;
     }
 .gridDestacados__imagenes{
         height: 100px;
@@ -64,6 +63,7 @@
         justify-self: center;
         line-height: 3rem;
         margin-right: 5rem;
+        color:$fuente;
 }
 .gridDetalleIzquierda{/*Contenedor Grid con texto a la izquierda e imagen a la Derecha*/
     display:grid;
