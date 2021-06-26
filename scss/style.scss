@@ -2,32 +2,8 @@
 @import "footer";
 @import "sliders";
 @import "colores";
+@import "mediaMobile";
 
-.gridDetalleHome{/*Contenedor grid fotos con texto Home*/
-    display:grid;
-    grid-template-rows: auto;
-    grid-template-columns: 4fr 5fr;
-    width: 100%;
-    align-content: space-around;
-    align-items: center;
-}
-.gridDetalleHome__imagenes{
-        justify-self: left;
-        max-width: 80%;
-        padding-left: 5rem;
-    }
-.gridDetalleHome__subtitulo{
-        justify-self: center;
-        text-align: left;
-        margin-right: 5rem;
-    }
-.gridDetalleHome__texto{
-        justify-self: center;
-        text-align: left;
-        line-height: 3rem;
-        font-size: 2rem;
-        margin-right: 5rem;
-    }
 .divGridDestacados{ /*Contenedor de grid al final*/
     margin:5rem 3rem 0rem 3rem;
     justify-content: center;
@@ -68,7 +44,7 @@
     }
 .gridDetalleDerecha{/*Contenedor Grid con texto a la derecha e imagen a la izquierda*/
     display:grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     align-items: center;
