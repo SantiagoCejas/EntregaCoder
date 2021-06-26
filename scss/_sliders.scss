@@ -84,3 +84,50 @@
     padding: 7rem 7rem 7rem 7rem ;
     text-align: center;
 }
+.subSlider{/*contenedor imagen grande debajo de slider "como trabajamos"*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    min-height:400px;
+    justify-content: center;
+    background: $azulmarca;
+    margin-top: 3rem;
+}
+    .subSlider img{
+        max-height: 500px;
+    }   
+.quieroContacten{/*Contenedor que lleva al contacto*/
+    display: inline-block;
+    width: 100%;
+    background: url("../images/slider2-contacto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.contenedorTexto{/*contenedor texto slider contacto*/
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    position:relative;
+}
+.hablemos{/*Atributos texto naranja slider contacto*/
+    font-size: 3rem;
+    color:$texto--destacado;
+}
+.contacten{/*Atributos de boton que lleva al contacto*/
+    font-size: 3rem;
+    color:#000000;
+    background-color:#ABB0B5;
+    margin: 4.5rem 1.5rem 4.5rem 1.5rem;
+}
+.mapa{ /*Contenedor iframe google maps*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 5rem 0rem 5rem 0rem;
+    width: 100%;
+    height: 80vh;
+}
