@@ -1,10 +1,10 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
     h1{
-        font-size: 2.5em;
+        font-size: 3rem;
         font-weight: 400;
     }
     h2{
-        font-size: 2em;
+        font-size: 3em;
     }
     .frase{/*Frases de corte, que no tienen fondo*/
         font-style:normal;
@@ -161,7 +161,5 @@
                 font-size: 1.2rem;
                 margin: 1rem 1rem 1rem 1rem;
             }
-
-
 
 }

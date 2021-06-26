@@ -107,22 +107,20 @@
 .contacten{/*Atributos de boton que lleva al contacto*/
     font-size: 3rem;
     color:#000000;
-    background-color:#ABB0B5;
+    background-color:$fuente--slider;
     margin: 4.5rem 1.5rem 4.5rem 1.5rem;
 }
 .textoCasosSlider{
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    color:#E5E5E5;
+    color:$fuente--slider;
     text-align: center;
     margin:7rem 5rem 0rem 5rem;
 }
 .botonCasos{
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    color:#E0AE77;
+    color:$texto--destacado;
     text-align: center;
-    background-color: #5C5757;  
+    background-color: $fuente--frase;  
     margin:7rem 5rem 0rem 5rem;
 }
 .mapa{ /*Contenedor iframe google maps*/

@@ -3,6 +3,7 @@
 @import "sliders";
 @import "colores";
 @import "mediaMobile";
+@import "mediaTablet";
 
 .gridDestacados{ /*Contenedor de puntos a destacar, arriba de "quiero que me llamen"*/
     display: grid;
@@ -27,7 +28,7 @@
 .gridDestacados__texto{
         font-size: 1.6rem;
         font-weight: 200;
-        color:#272525;
+        color:$fuente--slider;
     }
 .gridDestacados__imagenes{
         height: 100px;
@@ -239,27 +240,6 @@ border: none;
         font-size: 1.5rem;
         margin: 2rem 2rem 2rem 2rem;
     }
-/*Estilos del template de bootstrap*/
-.team-member {
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-  .team-member img {
-    width: 14rem;
-    height: 14rem;
-  }
-  .team-member h4, .team-member .h4 {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-  }
-.text-center{
-    margin: 2rem 2rem 2rem 2rem;
-    padding: 1rem 1rem 1rem 1rem;
-}
-.mx-2 {
-    margin-right: 0.5rem !important;
-    margin-left: 0.5rem !important;
-}
 .btn-social {
     height: 2.5rem;
     width: 2.5rem;
@@ -271,8 +251,8 @@ border: none;
 .gridSocios {
 /*Contenedor de "socios"*/
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         justify-items: stretch;
         align-items: stretch;
         width: 100%;
@@ -282,17 +262,16 @@ border: none;
         grid-row-gap: 2rem;
         margin: 2rem 0rem 2rem 0rem; 
     }
-      
     .gridSocios h3 {
-        font-size: 2.5rem;
-        font-weight: 400;
-        color: #0399e0;
-        padding: 3rem 0rem 3rem 0rem; 
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $texto--b;
+    padding: 3rem 0rem 3rem 0rem; 
     }   
     .gridSocios p {
         font-size: 1.8rem;
         font-weight: 200;
-        color: #272525;
+        color: $fuente--frase;
         max-width: 90%;
     }
       
