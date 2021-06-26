@@ -44,6 +44,9 @@ b {
   display: flex;
   max-height: 80px; }
 
+footer {
+  background-color: #3A444F; }
+
 .logoConsultoraFooter {
   /*uso logo consultora footer*/
   max-height: 150px; }
