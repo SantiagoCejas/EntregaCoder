@@ -2,8 +2,6 @@
 @import "footer";
 @import "sliders";
 @import "colores";
-@import "mediaMobile";
-@import "mediaTablet";
 .gridDestacados{ /*Contenedor de puntos a destacar, arriba de "quiero que me llamen"*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -354,3 +352,11 @@ border: none;
     width: 3rem;
     height: 3rem;
 }
+.error{
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding:3rem 3rem 3rem 3rem;
+}
+
+@import "mediaTablet";
+@import "mediaMobile";
