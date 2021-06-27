@@ -24,7 +24,7 @@ footer{
     flex-wrap: nowrap;
     align-content: space-around;
     justify-content: space-around;
-    border-left: solid 4px #7E7C7C;
+    border-left: solid 4px $fuente;
     margin-top: 1.5rem;
 }
     .derechaFooter ul{
@@ -54,7 +54,7 @@ footer{
     }
 .datosContacto{/*Atributos <p> footer*/
     font-size: 2rem;
-    color:#E0AE77;
+    color:$texto--destacado;
     margin: 1rem 1rem 1rem 1rem;
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;

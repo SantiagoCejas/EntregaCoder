@@ -1,10 +1,10 @@
 @media only screen and (max-width: 480px) {
     h1{
-        font-size: 2.5em;
+        font-size: 2.5rem;
         font-weight: 400;
     }
     h2{
-        font-size: 2em;
+        font-size: 2rem;
     }
     .frase{/*Frases de corte, que no tienen fondo*/
         font-style:normal;
@@ -20,10 +20,9 @@
         min-height: 100px;
     }
     .sliderFrase__texto{/*Estilo de texto para la frase de corte*/
-        font-size: 2em;
+        font-size: 2rem;
         font-style:italic;
         color:#ffffff;
-        font-family: 'Montserrat', sans-serif;
         padding: 3.5rem 3.5rem 3.5rem 3.5rem ;
         text-align: center;
     }
@@ -40,6 +39,7 @@
         .gridDetalleDerecha h2{
             font-size: 1.5rem;
             margin-top: 2rem;
+            margin-right: 0;
     }
         .gridDetalleDerecha img{
         margin: 0;
@@ -64,6 +64,7 @@
         .gridDetalleIzquierda h2{
             font-size: 1.5rem;
             margin-top: 2rem;
+            margin-left: 0rem;
     }
         .gridDetalleIzquierda img{
         margin: 0;
@@ -114,6 +115,10 @@
     .footerGrid{ /*Contenedor de footer*/
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-items: center;
+
     }
     .derechaFooter{ /*Atributos columna derecha del footer, links*/
         border-left: 0px;
@@ -155,18 +160,8 @@
     }
     .gridSocios {
         /*Contenedor de "socios"*/
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: stretch;
-        align-items: stretch;
-        width: 100%;
-        max-height: 20%;
-        text-align: center;
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
-        margin: 1rem 0rem 1rem 0rem; 
-            }
+        width: 90%;
+}
             .gridSocios h3 {
             font-size: 1.2rem;
             font-weight: 400;
@@ -259,10 +254,6 @@
         padding:1rem 1rem 1rem 2rem; 
     }
     .coberturaFormulario{/*Contenedor formulario*/
-        background-color:rgba(0, 0, 0, 0.5);
-        width: 100%;
-        display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         padding:1rem 1rem 1rem 1rem;
     }
