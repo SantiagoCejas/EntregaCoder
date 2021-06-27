@@ -9,11 +9,11 @@
     .frase{/*Frases de corte, que no tienen fondo*/
         font-style:normal;
         color:$fuente--frase;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin:2rem 3rem 2rem 3rem;
         padding: 0.5rem 1.5rem 0.5rem 1.5rem ;
         text-align: center;
-        line-height:2rem;
+        line-height:1.5rem;
     }
     .sliderFrase{/*Contenedor frase de corte (fondo negro)*/
         height:250%;
@@ -34,15 +34,46 @@
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         justify-content: center;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
     }
         .gridDetalleDerecha h2{
             font-size: 1.5rem;
+            margin-top: 2rem;
     }
+        .gridDetalleDerecha img{
+        margin: 0;
+        padding:0;
+}
         .gridDetalleDerecha p{
             font-size: 1.2rem;
             justify-self: center;
             line-height: 3rem;
-            margin-right: 5rem;
+            margin: 0;
+    }
+    .gridDetalleIzquierda{/*Contenedor Grid con texto a la derecha e imagen a la izquierda*/
+        display:flex;
+        flex-direction: column;
+        font-size: 1.2rem; 
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        justify-content: center;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+        .gridDetalleIzquierda h2{
+            font-size: 1.5rem;
+            margin-top: 2rem;
+    }
+        .gridDetalleIzquierda img{
+        margin: 0;
+        padding:0;
+}
+        .gridDetalleIzquierda p{
+            font-size: 1.2rem;
+            justify-self: center;
+            line-height: 3rem;
+            margin: 0;
     }
     .gridDestacados{ /*Contenedor de puntos a destacar, arriba de "quiero que me llamen"*/
         grid-template-columns: 1fr;
@@ -69,10 +100,10 @@
 
         }
     .hablemos{/*Atributos texto naranja slider contacto*/
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .contacten{/*Atributos de boton que lleva al contacto*/
-        font-size: 2rem;
+        font-size: 1.6rem;
         color:#000000;
         background-color:$fuente--slider;
         margin: 2.5rem 1rem 2.5rem 1rem;
@@ -124,64 +155,89 @@
     }
     .gridSocios {
         /*Contenedor de "socios"*/
-                display: flex;
-                flex-direction: column;
-                justify-items: stretch;
-                align-items: stretch;
-                width: 100%;
-                max-height: 30%;
-                text-align: center;
-                margin: 2rem 0rem 2rem 0rem; 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: stretch;
+        align-items: stretch;
+        width: 100%;
+        max-height: 20%;
+        text-align: center;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        margin: 1rem 0rem 1rem 0rem; 
             }
             .gridSocios h3 {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             font-weight: 400;
             color: $texto--b;
-            padding: 3rem 0rem 3rem 0rem; 
+            padding:0; 
             }   
             .gridSocios p {
-                font-size: 1.5rem;
+                font-size: 1rem;
                 font-weight: 200;
                 color: $fuente--frase;
                 max-width: 90%;
             }
-              
             .gridSocios img {
-                height: 80px;
-                max-width: 80px; 
+                height: 60px;
+                max-width: 60px; 
             }
-    .blog p{
-        font-size: 1.2rem;
-        margin: 1rem 1rem 1rem 1rem;
-    }
-    .formulario{
-        padding: 2rem 2rem 2rem 2rem;
-    }
+        .imgSocios{
+                max-height: 40px;
+                padding: 1rem 0.5rem 0.5rem 0.5rem;
+            }
+        .blog{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+        }
+            .blog img{
+                max-width: 85%;
+                justify-self: left;
+                border-radius: 5%;
+                margin: 2rem 2rem 2rem 2rem;
+        }
+            .blog p{
+                font-size: 1.5rem;
+                margin: 2rem 2rem 2rem 2rem;
+            }
+    .formulario{/*Contenedor formulario*/
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        padding: 1rem 1rem 1rem 1rem;
+        margin-bottom: 2rem;
+        }
         .formulario h2{
-            font-size: 2rem;
-            font-weight: 600;
-            line-height: 3rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2rem;
             color:#ffffff;
         }
         .formulario p{
-            font-weight: 500;
-            font-size: 1.5rem;
-            line-height: 2.5rem;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 2rem;
             color:#ffffff;
-        }
+    }
     .boton{/*Estilo de los botones de consulta*/
-        font-size:1.5rem;
+        font-size:1.4rem;
     }
     .form-label{
-        font-size: 1.8rem;
+        font-size: 1.4em;
         color:#ffffff;
         padding:1rem 1rem 1rem 1rem;
+        width: 70%;
     }
     .form-control{
         padding:1rem 1rem 1rem 1rem;
     }
     .form-select{
-        font-size:1.5rem;
+        font-size:1.4rem;
     }
     .consulta{
         width:70%;
@@ -190,7 +246,7 @@
         margin: 1rem 1rem 1rem 1rem ;
     }
     .form-check-label{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color:#ffffff;
         padding:1rem 0rem 1rem 0rem; 
     }
@@ -201,6 +257,14 @@
         justify-content: space-between;
         align-items:center;
         padding:1rem 1rem 1rem 2rem; 
+    }
+    .coberturaFormulario{/*Contenedor formulario*/
+        background-color:rgba(0, 0, 0, 0.5);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:1rem 1rem 1rem 1rem;
     }
 
 }
